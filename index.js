@@ -41,7 +41,7 @@ app.post('/api/telemetry', async (req, res) => {
 
     await nuevoDato.save();
 
-    console.log(Dato guardado → ${temp}°C | ${hum}% | ${timestamp});
+    console.log(`Dato guardado → ${temp}°C | ${hum}% | ${timestamp}`);
     res.status(201).json({ 
       message: 'Dato DHT22 guardado correctamente',
       id: nuevoDato._id 
@@ -91,6 +91,6 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(Servidor corriendo en http://localhost:${PORT});
-  console.log(POST → https://esp32-telemetry.onrender.com/api/telemetry);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`POST → https://esp32-telemetry.onrender.com/api/telemetry`);
 });
