@@ -1,3 +1,4 @@
+// models/Datos.js
 const mongoose = require('mongoose');
 
 const telemetrySchema = new mongoose.Schema({
