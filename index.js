@@ -104,5 +104,5 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
-  console.log(`POST → https://esp32-telemetry.onrender.com/api/telemetry`);
+  console.log(`POST → https://server-kappa-smoky-91.vercel.app/api/telemetry`);
 });
